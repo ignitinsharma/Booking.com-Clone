@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <br />
-      <Button variant="contained" onClick={()=>alert("hello")}>Demo btn</Button>
+      <Button variant="contained" color='inherit'  onClick={()=>alert("hello")}>Demo btn</Button>
      </div>
   );
 }
