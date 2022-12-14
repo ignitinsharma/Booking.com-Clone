@@ -93,6 +93,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
   
 }
 
@@ -106,5 +107,6 @@
     margin: auto;
     margin-top: 25rem;
     margin-right: 1rem;
+    padding: 0 1rem 0 1rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
