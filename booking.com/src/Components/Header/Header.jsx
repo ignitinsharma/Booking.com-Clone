@@ -92,15 +92,14 @@ const Header = () => {
               style={{ color: "white" }}
               icon={faCalendarDay}
             />
-
             {/* Here we are using React date range Library
                 for Better Ui */}
-
             <DateRange
               editableDateInputs={true}
               onChange={(item) => setDate([item.selection])}
               moveRangeOnFirstSelection={false}
               ranges={date}
+              className='DateSection'
             />
 
             <span className="headersearchtext">{Date.now()}</span>
