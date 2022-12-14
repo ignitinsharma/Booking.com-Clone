@@ -58,7 +58,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-
       {/* === Header Image  section === */}
       <div className="headerSection">
         <img
@@ -73,57 +72,63 @@ const Header = () => {
           <p className="ImgsectionPTag">Easy booking, easy living</p>
         </div>
       </div>
-
-      {/* === Header Search Bar area === */}
       <br />
-      <div className="headerSearchParent">
-        <div className="headerSearch">
-          <div className="headerSearchItems">
-            <FontAwesomeIcon className="headerIcons" icon={faBed} />
-            <input
-              className="headerSearchInput"
-              type="text"
-              placeholder="Where are you going.?"
-            />
-          </div>
-          <div className="headerSearchItems">
-            <FontAwesomeIcon className="headerIcons" icon={faCalendarDay} />
-            {/* 
+      {/* === Header Search Bar area === */}
+      <div className="HeaderSeachmain">
+        <div className="headerSearchParent">
+          <div className="headerSearch">
+            <div className="headerSearchItems">
+              <FontAwesomeIcon className="headerIcons" icon={faBed} />
+              <input
+                className="headerSearchInput"
+                type="text"
+                placeholder="Where are you going.?"
+              />
+            </div>
+            <div className="headerSearchItems">
+              <FontAwesomeIcon className="headerIcons" icon={faCalendarDay} />
+              {/* 
               --> Here we are simple taking data form Date varibale and showing
-                  on that format dd.mm.yyyy
+              on that format dd.mm.yyyy
+              
+              On that onclick function i'm simply toggle value if value is true 
+              so make false if false so make true
+            */}
+              <span
+                onClick={() => setOpendate(!opendate)}
+                className="headersearchtext"
+              >{`${format(date[0].startDate, "dd.MM.yyyy")} to ${format(
+                date[0].endDate,
+                "dd.MM.yyyy"
+              )}`}</span>
 
-                  On that onclick function i'm simply toggle value if value is true 
-                  so make false if false so make true
-              */}
-            <span onClick={()=>setOpendate(!opendate)} className="headersearchtext">{`${format(
-              date[0].startDate,
-              "dd.MM.yyyy"
-            )} to ${format(date[0].endDate, "dd.MM.yyyy")}`}</span>
-
-            {/* Here we are using React date range Library
+              {/* Here we are using React date range Library
                 for Better Ui and updating therir state by onChange
                 
                 
                 And then according to condition im rendering that Date Ui 
-            */}
-            {opendate ? (
-              <DateRange
-                editableDateInputs={true}
-                onChange={(item) => setDate([item.selection])}
-                moveRangeOnFirstSelection={false}
-                ranges={date}
-                className="DateSection"
-              />
-            ) : null}
-          </div>
-          <div className="headerSearchItems">
-            <FontAwesomeIcon className="headerIcons" icon={faPerson} />
-            <span className="headersearchtext">2 adult 2 children 1 room</span>
-          </div>
-          <div className="headerSearchItems">
-            <Button variant="contained" style={{ backgroundColor: "#0071c" }}>
-              Search
-            </Button>
+              */}
+              {opendate ? (
+                <DateRange
+                  editableDateInputs={true}
+                  onChange={(item) => setDate([item.selection])}
+                  moveRangeOnFirstSelection={false}
+                  ranges={date}
+                  className="DateSection"
+                />
+              ) : null}
+            </div>
+            <div className="headerSearchItems">
+              <FontAwesomeIcon className="headerIcons" icon={faPerson} />
+              <span className="headersearchtext">
+                2 adult 2 children 1 room
+              </span>
+            </div>
+            <div className="headerSearchItems">
+              <Button variant="contained" style={{ backgroundColor: "#0071c" }}>
+                Search
+              </Button>
+            </div>
           </div>
         </div>
       </div>
