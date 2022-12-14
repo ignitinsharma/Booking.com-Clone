@@ -4,10 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
   faCalendarDay,
-  faCalendarWeek,
   faCar,
   faEarth,
-  faFaceSmile,
   faPerson,
   faPlane,
   faTaxi,
@@ -16,6 +14,7 @@ import { Button } from "@mui/material";
 import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // For Date section Css
 import "react-date-range/dist/theme/default.css";
+import { format } from "date-fns"; // Convert JS date into Readable Format
 
 const Header = () => {
   /* --> We are using for Managing date range what is the start date and what is
@@ -87,11 +86,7 @@ const Header = () => {
             />
           </div>
           <div className="headerSearchItems">
-            <FontAwesomeIcon
-              className="headerIcons"
-              style={{ color: "white" }}
-              icon={faCalendarDay}
-            />
+            <FontAwesomeIcon className="headerIcons" icon={faCalendarDay} />
             {/* Here we are using React date range Library
                 for Better Ui */}
             <DateRange
@@ -99,10 +94,18 @@ const Header = () => {
               onChange={(item) => setDate([item.selection])}
               moveRangeOnFirstSelection={false}
               ranges={date}
-              className='DateSection'
+              className="DateSection"
             />
 
-            <span className="headersearchtext">{Date.now()}</span>
+              {/* 
+              --> Here we are simple taking data form date and showing
+                  on that format dd.mm.yyy
+              */}
+            <span className="headersearchtext">{`${format(
+              date[0].startDate,
+              "dd.MM.yyyy"
+            )} to ${format(date[0].endDate, "dd.MM.yyyy")}`}</span>
+
           </div>
           <div className="headerSearchItems">
             <FontAwesomeIcon className="headerIcons" icon={faPerson} />
