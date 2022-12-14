@@ -131,7 +131,7 @@ const Header = () => {
               <span
                 onClick={() => setOpenbooking(!Openbooking)}
                 className="headersearchtext"
-              >{`${option.adult} adult · ${option.child} children · ${option.room} room`}</span>
+              >{`${adult} adult · ${child} children · ${room} room`}</span>
 
               {Openbooking ? (
                 <div className="option">
