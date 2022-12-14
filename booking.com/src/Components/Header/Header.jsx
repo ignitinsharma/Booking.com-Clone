@@ -79,6 +79,9 @@ const Header = () => {
               style={{ color: "white" }}
               icon={faCalendarDay}
             />
+
+            {/* Here we are using React date range Library */}
+
             <span className="headersearchtext">date to date</span>
           </div>
           <div className="headerSearchItems">
