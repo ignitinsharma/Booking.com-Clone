@@ -1,6 +1,6 @@
 .Parent {
   width: 100%;
-  height: 100vh;
+  height: 1000vh;
 }
 
 .header {
@@ -30,10 +30,11 @@
   border-radius: 20px;
 }
 
-.headerImagesection {
+.headerSection {
   width: 100%;
-  border: 2px solid blue;
+  height: 17.4rem;
 }
+
 .headerImage {
   width: 100%;
   height: auto;
@@ -49,13 +50,51 @@
 .imgsectionH1 {
   color: white;
   padding: 1rem 0 1rem 0;
-  z-index: 1; 
+  z-index: 1;
   font-size: 40px;
   width: 50%;
 }
 
 .ImgsectionPTag {
-    color: white;
+  color: white;
   z-index: 1;
   font-size: 20px;
 }
+
+.headerSearchParent {
+  width: 90%;
+  margin: auto;
+  margin-top: auto;
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.headerSearch {
+  height: 30px;
+  background-color: white;
+  border: 4px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.headerIcons {
+  color: #6b6b6b;
+}
+
+.headerSearchItems {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+  }
+  
