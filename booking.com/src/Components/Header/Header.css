@@ -75,6 +75,7 @@
   margin: auto;
   margin-top: auto;
   border: 2px solid red;
+  z-index: -1;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -82,7 +83,6 @@
 
 .headerSearch {
   position: relative;
-  overflow: hidden;
   width: 100%;
   height: 30px;
   background-color: white;
@@ -120,5 +120,12 @@
   margin-top: 25rem;
   margin-right: 1rem;
   padding: 0 1rem 0 1rem;
+  z-index: 99999;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.headersearchtext{
+    font-size: 17px;
+    z-index: 1;
 }

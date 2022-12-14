@@ -17,7 +17,7 @@ import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns"; // Convert JS date into Readable Format
 
 const Header = () => {
-  const [opendate, setOpendate] = useState(false);
+  const [opendate, setOpendate] = useState(true);
   /* --> We are using for Managing date range what is the start date and what is
       the end date. */
   const [date, setDate] = useState([
