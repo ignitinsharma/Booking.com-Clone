@@ -1,0 +1,61 @@
+.Parent {
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 8rem;
+  width: 100%;
+}
+
+.headerContainer {
+  width: 90%;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.headerlistItems {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.headerImagesection {
+  width: 100%;
+  border: 2px solid blue;
+}
+.headerImage {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+}
+
+.contentImg {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+.imgsectionH1 {
+  color: white;
+  padding: 1rem 0 1rem 0;
+  z-index: 1; 
+  font-size: 40px;
+  width: 50%;
+}
+
+.ImgsectionPTag {
+    color: white;
+  z-index: 1;
+  font-size: 20px;
+}
