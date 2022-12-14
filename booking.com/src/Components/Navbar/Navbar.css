@@ -6,8 +6,7 @@
   }
   
   .navContainer{
-    width: 100%;
-    max-width: 1024px;
+    width: 90%;
     color: white;
     display: flex;
     align-items: center;
@@ -20,7 +19,7 @@
   }
   
   .navButton{
-    margin-left: 20px;
+    margin-left: 1.5rem;
     border: none;
     padding: 0.6rem 1.3rem;
     cursor: pointer;
