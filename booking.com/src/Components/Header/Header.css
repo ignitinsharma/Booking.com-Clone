@@ -86,13 +86,13 @@
 
 .headerIcons {
   color: #6b6b6b;
+  font-size: larger;
 }
 
 .headerSearchItems {
   display: flex;
   align-items: center;
   gap: 10px;
-  border: 2px solid green;
   
 }
 
@@ -102,6 +102,7 @@
   }
   
   .DateSection{
+    position: absolute;
     margin: auto;
     margin-top: 25rem;
     margin-right: 1rem;
