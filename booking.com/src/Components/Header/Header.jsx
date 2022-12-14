@@ -17,6 +17,7 @@ import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns"; // Convert JS date into Readable Format
 
 const Header = () => {
+  const [opendate, setOpendate] = useState(false);
   /* --> We are using for Managing date range what is the start date and what is
       the end date. */
   const [date, setDate] = useState([
@@ -87,25 +88,33 @@ const Header = () => {
           </div>
           <div className="headerSearchItems">
             <FontAwesomeIcon className="headerIcons" icon={faCalendarDay} />
-            {/* Here we are using React date range Library
-                for Better Ui */}
-            <DateRange
-              editableDateInputs={true}
-              onChange={(item) => setDate([item.selection])}
-              moveRangeOnFirstSelection={false}
-              ranges={date}
-              className="DateSection"
-            />
+            {/* 
+              --> Here we are simple taking data form Date varibale and showing
+                  on that format dd.mm.yyyy
 
-              {/* 
-              --> Here we are simple taking data form date and showing
-                  on that format dd.mm.yyy
+                  On that onclick function i'm simply toggle value if value is true 
+                  so make false if false so make true
               */}
-            <span className="headersearchtext">{`${format(
+            <span onClick={()=>setOpendate(!opendate)} className="headersearchtext">{`${format(
               date[0].startDate,
               "dd.MM.yyyy"
             )} to ${format(date[0].endDate, "dd.MM.yyyy")}`}</span>
 
+            {/* Here we are using React date range Library
+                for Better Ui and updating therir state by onChange
+                
+                
+                And then according to condition im rendering that Date Ui 
+            */}
+            {opendate ? (
+              <DateRange
+                editableDateInputs={true}
+                onChange={(item) => setDate([item.selection])}
+                moveRangeOnFirstSelection={false}
+                ranges={date}
+                className="DateSection"
+              />
+            ) : null}
           </div>
           <div className="headerSearchItems">
             <FontAwesomeIcon className="headerIcons" icon={faPerson} />
