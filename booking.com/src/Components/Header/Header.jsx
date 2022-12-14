@@ -3,18 +3,21 @@ import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
+  faCalendarDay,
+  faCalendarWeek,
   faCar,
   faEarth,
+  faFaceSmile,
+  faPerson,
   faPlane,
   faTaxi,
 } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "@mui/material";
 
 const Header = () => {
   return (
     <div className="Parent">
-      {/* 
-    === Navbar section === 
-     */}
+      {/*=== Navbar section ===*/}
 
       <div className="header">
         <div className="headerContainer">
@@ -55,6 +58,36 @@ const Header = () => {
             The joy of home anywhere in the world
           </h1>
           <p className="ImgsectionPTag">Easy booking, easy living</p>
+        </div>
+      </div>
+
+      {/* === Header Search Bar area === */}
+      <br />
+      <div className="headerSearchParent">
+        <div className="headerSearch">
+          <div className="headerSearchItems">
+            <FontAwesomeIcon className="headerIcons" icon={faBed} />
+            <input
+              className="headerSearchInput"
+              type="text"
+              placeholder="Where are you going.?"
+            />
+          </div>
+          <div className="headerSearchItems">
+            <FontAwesomeIcon
+              className="headerIcons"
+              style={{ color: "white" }}
+              icon={faCalendarDay}
+            />
+            <span className="headersearchtext">date to date</span>
+          </div>
+          <div className="headerSearchItems">
+            <FontAwesomeIcon className="headerIcons" icon={faPerson} />
+            <span className="headersearchtext">2 adult 2 children 1 room</span>
+          </div>
+          <div className="headerSearchItems">
+            <Button variant="contained" style={{backgroundColor:'#0071c'}}>Search</Button>
+          </div> 
         </div>
       </div>
     </div>
