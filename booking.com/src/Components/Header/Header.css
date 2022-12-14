@@ -31,13 +31,15 @@
 }
 
 .headerSection {
-  width: 100%;
-  height: 17.4rem;
+    width: 100%;
+    height: 18.5rem;
+    position: relative;
+    
 }
 
 .headerImage {
   width: 100%;
-  height: auto;
+  height: 22rem;
   position: absolute;
   z-index: -1;
 }
@@ -61,6 +63,13 @@
   font-size: 20px;
 }
 
+.HeaderSeachmain {
+    width: 100%;
+    border: 1px solid palevioletred;
+    height: 400px;
+    position: relative;
+
+}
 .headerSearchParent {
   width: 90%;
   margin: auto;
@@ -69,10 +78,12 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  position: relative;
 }
 
 .headerSearch {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
   height: 30px;
   background-color: white;
   border: 4px solid #febb02;
@@ -82,6 +93,7 @@
   padding: 10px 0px;
   border-radius: 5px;
   width: 100%;
+  z-index: 1;
 }
 
 .headerIcons {
@@ -94,19 +106,19 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  
 }
 
 .headerSearchInput {
-    border: none;
-    outline: none;
-  }
-  
-  .DateSection{
-    position: absolute;
-    margin: auto;
-    margin-top: 25rem;
-    margin-right: 1rem;
-    padding: 0 1rem 0 1rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+
+.DateSection {
+  position: absolute;
+  margin: auto;
+  margin-top: 25rem;
+  margin-right: 1rem;
+  padding: 0 1rem 0 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
