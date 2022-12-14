@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,8 +13,21 @@ import {
   faTaxi,
 } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@mui/material";
+import { DateRange } from "react-date-range";
+import "react-date-range/dist/styles.css"; // For Date section Css
+import "react-date-range/dist/theme/default.css";
 
 const Header = () => {
+  /* --> We are using for Managing date range what is the start date and what is
+      the end date. */
+  const [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection",
+    },
+  ]);
+
   return (
     <div className="Parent">
       {/*=== Navbar section ===*/}
@@ -80,17 +93,27 @@ const Header = () => {
               icon={faCalendarDay}
             />
 
-            {/* Here we are using React date range Library */}
+            {/* Here we are using React date range Library
+                for Better Ui */}
 
-            <span className="headersearchtext">date to date</span>
+            <DateRange
+              editableDateInputs={true}
+              onChange={(item) => setDate([item.selection])}
+              moveRangeOnFirstSelection={false}
+              ranges={date}
+            />
+
+            <span className="headersearchtext">{Date.now()}</span>
           </div>
           <div className="headerSearchItems">
             <FontAwesomeIcon className="headerIcons" icon={faPerson} />
             <span className="headersearchtext">2 adult 2 children 1 room</span>
           </div>
           <div className="headerSearchItems">
-            <Button variant="contained" style={{backgroundColor:'#0071c'}}>Search</Button>
-          </div> 
+            <Button variant="contained" style={{ backgroundColor: "#0071c" }}>
+              Search
+            </Button>
+          </div>
         </div>
       </div>
     </div>
