@@ -31,10 +31,9 @@
 }
 
 .headerSection {
-    width: 100%;
-    height: 18.5rem;
-    position: relative;
-    
+  width: 100%;
+  height: 18.5rem;
+  position: relative;
 }
 
 .headerImage {
@@ -64,17 +63,15 @@
 }
 
 .HeaderSeachmain {
-    width: 100%;
-    border: 1px solid palevioletred;
-    height: 400px;
-    position: relative;
-
+  width: 100%;
+  border: 1px solid palevioletred;
+  height: 400px;
+  position: relative;
 }
 .headerSearchParent {
   width: 90%;
   margin: auto;
   margin-top: auto;
-  border: 2px solid red;
   z-index: -1;
   height: 100vh;
   display: flex;
@@ -117,15 +114,49 @@
 .DateSection {
   position: absolute;
   margin: auto;
-  margin-top: 25rem;
-  margin-right: 1rem;
+  margin-top: 25.3rem;
   padding: 0 1rem 0 1rem;
-  z-index: 99999;
+  z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.headersearchtext {
+  font-size: 17px;
+}
 
-.headersearchtext{
-    font-size: 17px;
-    z-index: 1;
+.option {
+  position: absolute;
+  top: 3rem;
+  width: 20%;
+  margin: auto;
+  padding:  1rem 0.4rem 1rem 0.4rem;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.optionItem {
+  display: flex;
+  width: 10rem;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 0.2rem;
+}
+
+.OptionButtons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.CounterNumber {
+  color: #003580;
+}
+
+.optionBtn {
+  padding: 0.2rem;
+
+}
+
+.OptionText{
+    font-weight: 490;
 }
