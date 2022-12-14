@@ -1,0 +1,162 @@
+.Parent {
+  width: 100%;
+  height: 1000vh;
+}
+
+.header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 8rem;
+  width: 100%;
+}
+
+.headerContainer {
+  width: 90%;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.headerlistItems {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.headerSection {
+  width: 100%;
+  height: 18.5rem;
+  position: relative;
+}
+
+.headerImage {
+  width: 100%;
+  height: 22rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.contentImg {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+.imgsectionH1 {
+  color: white;
+  padding: 1rem 0 1rem 0;
+  z-index: 1;
+  font-size: 40px;
+  width: 50%;
+}
+
+.ImgsectionPTag {
+  color: white;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.HeaderSeachmain {
+  width: 100%;
+  border: 1px solid palevioletred;
+  height: 400px;
+  position: relative;
+}
+.headerSearchParent {
+  width: 90%;
+  margin: auto;
+  margin-top: auto;
+  z-index: -1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.headerSearch {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border: 4px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 1;
+}
+
+.headerIcons {
+  color: #6b6b6b;
+  font-size: larger;
+}
+
+.headerSearchItems {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+
+.DateSection {
+  position: absolute;
+  margin: auto;
+  margin-top: 25.3rem;
+  padding: 0 1rem 0 1rem;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.headersearchtext {
+  font-size: 17px;
+}
+
+.option {
+  position: absolute;
+  top: 3rem;
+  width: 20%;
+  margin: auto;
+  padding:  1rem 0.4rem 1rem 0.4rem;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.optionItem {
+  display: flex;
+  width: 10rem;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 0.2rem;
+}
+
+.OptionButtons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.CounterNumber {
+  color: #003580;
+}
+
+.optionBtn {
+  padding: 0.2rem;
+
+}
+
+.OptionText{
+    font-weight: 490;
+}
