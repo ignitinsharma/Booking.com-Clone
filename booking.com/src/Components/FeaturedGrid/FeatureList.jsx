@@ -61,13 +61,13 @@ const FeatureList = () => {
 
         <div className="featuredItemGrid">
           <img
-            src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
+            src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F9fcda278-32a5-408a-88e2-c09b7f9dddd9.png?fit=scale-down&source=next&width=700"
             alt=""
             className="featuredImgGrid"
           />
           <div className="featuredTitlesGrid">
-            <h1>Austin</h1>
-            <h3>231 properties</h3>
+            <h1>Vienna, Austria</h1>
+            <h3>456 properties</h3>
           </div>
         </div>
         <div className="featuredItemGrid">
