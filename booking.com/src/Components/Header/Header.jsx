@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import "./Header.css";
+import {Button} from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
   faCalendarDay,
-  faCar,
-  faEarth,
   faPerson,
   faPlane,
   faTaxi,
 } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "@mui/material";
 import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // For Date section Css
 import "react-date-range/dist/theme/default.css";
@@ -166,10 +164,10 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-              ) :null}
+              ) : null}
             </div>
             <div className="headerSearchItems">
-              <Button variant="contained" style={{ backgroundColor: "#0071c" }}>
+              <Button colorScheme="teal" size="xs">
                 Search
               </Button>
             </div>

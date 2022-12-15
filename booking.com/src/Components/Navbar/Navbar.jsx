@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import React from "react";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,9 +16,9 @@ const Navbar = () => {
         <div className="navContainer">
           <span className="logo">&lt;/MyBooking.com&gt;</span>
           <div className="navItems">
-            <Button variant="outlined" style={{ color: "white" }}>
+            {/* <Button variant="outlined" style={{ color: "white" }}>
               List your Property
-            </Button>
+            </Button> */}
             <button className="navButton">Register</button>
             <button className="navButton">Login</button>
           </div>

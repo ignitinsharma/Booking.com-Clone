@@ -1,11 +1,11 @@
-import { Button } from '@mui/material';
-import './App.css';
-import AllRoutes from './Components/AllRoutes/AllRoutes.jsx';
+import "./App.css";
+import AllRoutes from "./Components/AllRoutes/AllRoutes.jsx";
+
 
 function App() {
   return (
-    <div className="App">
-      <AllRoutes/>
+      <div className="App">
+        <AllRoutes />
       </div>
   );
 }

@@ -1,4 +1,3 @@
-import Carousel from "../Carousel/Carousel";
 import FeatureList from "../FeaturedGrid/FeatureList";
 import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
@@ -14,7 +13,6 @@ const Home = () => {
       <div className="FeatureListContainer">
         <FeatureList />
       </div>
-      <Carousel />
     </div>
   );
 };
