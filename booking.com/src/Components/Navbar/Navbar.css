@@ -1,28 +1,62 @@
-.navbar{
-    height: 4rem;
-    background-color: #003580;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navContainer{
-    width: 90%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .logo{
-    font-weight: 500;
-    font-size: 23px;
-  }
-  
-  .navButton{
-    margin-left: 1.5rem;
-    border: none;
-    padding: 0.6rem 1.3rem;
-    cursor: pointer;
-    color: #003580;
-    border-radius: 5px;
-  }
+.navbar {
+  height: 4rem;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  width: 90%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 23px;
+}
+
+.navButton {
+  margin-left: 1.5rem;
+  border: none;
+  padding: 0.6rem 1.3rem;
+  cursor: pointer;
+  color: #003580;
+  border-radius: 5px;
+}
+
+/*  Navbar Pages Routes CSS */
+
+.Parent {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 8rem;
+  width: 100%;
+}
+
+.headerContainer {
+  width: 90%;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.headerlistItems {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}

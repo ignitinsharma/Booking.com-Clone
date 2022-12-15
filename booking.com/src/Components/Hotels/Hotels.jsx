@@ -1,12 +1,13 @@
-import React from 'react'
-import './Hotels.css'
+import React from "react";
+import Navbar from "../Navbar/Navbar";
+import "./Hotels.css";
 
 const Hotels = () => {
   return (
     <div>
-        <h1>hotelss</h1>
+     <Navbar/>
     </div>
-  )
-}
+  );
+};
 
-export default Hotels
+export default Hotels;
