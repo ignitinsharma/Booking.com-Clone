@@ -1,0 +1,12 @@
+.FeatureListContainer{
+    width: 90%;
+    height: auto;
+    z-index: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+
+}
+

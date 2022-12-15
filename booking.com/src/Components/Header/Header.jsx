@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import "./Header.css";
+import {Button} from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
   faCalendarDay,
-  faCar,
-  faEarth,
   faPerson,
   faPlane,
   faTaxi,
 } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "@mui/material";
 import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // For Date section Css
 import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns"; // Convert JS date into Readable Format
+import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
   const [opendate, setOpendate] = useState(false);
@@ -39,34 +38,6 @@ const Header = () => {
 
   return (
     <div className="Parent">
-      {/*=== Navbar section ===*/}
-
-      <div className="header">
-        <div className="headerContainer">
-          <div className="headerList">
-            <div className="headerlistItems">
-              <FontAwesomeIcon icon={faBed} />
-              <span> Stays</span>
-            </div>
-            <div className="headerlistItems">
-              <FontAwesomeIcon icon={faPlane} />
-              <span> Flights</span>
-            </div>
-            <div className="headerlistItems">
-              <FontAwesomeIcon icon={faCar} />
-              <span> Car Rental</span>
-            </div>
-            <div className="headerlistItems">
-              <FontAwesomeIcon icon={faEarth} />
-              <span> Attraction</span>
-            </div>
-            <div className="headerlistItems">
-              <FontAwesomeIcon icon={faTaxi} />
-              <span> AirPort Taxi</span>
-            </div>
-          </div>
-        </div>
-      </div>
       {/* === Header Image  section === */}
       <div className="headerSection">
         <img
@@ -193,10 +164,10 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-              ) :null}
+              ) : null}
             </div>
             <div className="headerSearchItems">
-              <Button variant="contained" style={{ backgroundColor: "#0071c" }}>
+              <Button colorScheme="teal" size="xs">
                 Search
               </Button>
             </div>
