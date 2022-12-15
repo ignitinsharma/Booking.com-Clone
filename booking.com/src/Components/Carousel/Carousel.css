@@ -1,0 +1,24 @@
+.CarouselContainer{
+    width: 90%;
+    height: 30rem;
+    margin: auto;
+}
+.maindatadiv{
+    margin-top: 1rem;
+    width: 30rem;
+    height: 20rem;
+    border: 2px solid green;
+}
+
+.BoxImg{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.CarouselImg{
+    width: 100%;
+    height: 10rem;
+    transition: 0.3s;
+    
+}
