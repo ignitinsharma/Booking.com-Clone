@@ -8,6 +8,7 @@ import {
   faPlane,
   faTaxi,
 } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
@@ -16,16 +17,20 @@ const Navbar = () => {
         <div className="navContainer">
           <span className="logo">&lt;/MyBooking.com&gt;</span>
           <div className="navItems">
-            {/* <Button variant="outlined" style={{ color: "white" }}>
+            <Button style={{ color: "white" }}  _hover={{backgroundColor:"#003590"}} variant="outline">
               List your Property
-            </Button> */}
-            <button className="navButton">Register</button>
-            <button className="navButton">Login</button>
+            </Button>
+            <Button className="navButton" variant="solid">
+            Register
+            </Button>
+            <Button className="navButton" style={{ color: "black" }} variant="solid">
+            Login
+            </Button>
           </div>
         </div>
       </div>
 
-                {/* Navlinks*/}
+      {/* Navlinks*/}
       <div className="header">
         <div className="headerContainer">
           <div className="headerList">
