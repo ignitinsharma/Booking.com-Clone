@@ -15,7 +15,9 @@ const Navbar = () => {
     <>
       <div className="navbar">
         <div className="navContainer">
-          <span className="logo">&lt;/MyBooking.com&gt;</span>
+          <Link to="/">
+            <span className="logo">&lt;/MyBooking.com&gt;</span>
+          </Link>
           <div className="navItems">
             <Button
               style={{ color: "white" }}
@@ -55,7 +57,7 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faBed} />
               <span> Stays</span>
             </div>
-            <Link to='flights'>
+            <Link to="flights">
               <div className="headerlistItems">
                 <FontAwesomeIcon icon={faPlane} />
                 <span> Flights</span>
