@@ -6,12 +6,14 @@ import SingleHotelPage from "../SingleHotelPage/SingleHotelPage";
 import NotFound from "../NotFound/NotFound";
 import Login from "../Register/Login/Login";
 import Register from "../Register/Login/Register";
+import Flights from "../Flights/Flights";
 
 const AllRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/hotels" element={<Hotels />} />
+      <Route path="/flights" element={<Flights />} />
       <Route path="/hotels/:id" element={<SingleHotelPage />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
