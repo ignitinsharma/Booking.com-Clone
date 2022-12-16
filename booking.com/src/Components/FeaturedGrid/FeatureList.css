@@ -1,3 +1,7 @@
+.ParentFetured{
+  margin-top: -2rem;
+}
+
 .featured {
   width: 100%;
   display: grid;
@@ -23,6 +27,14 @@
   overflow: hidden;
 }
 
+.MumbaiH1{
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.MumbaiH2{
+  font-size: 1.3rem;
+  font-weight: 600;
+}
 
 .featuredTitlesOne {
   position: absolute;
@@ -120,4 +132,15 @@
 .featuredImgGrid:hover {
   transition: 0.4s;
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.SecondTitleH1{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.SecondTitleH3{
+  font-size: 1.3rem;
+  font-weight: 600;
 }
