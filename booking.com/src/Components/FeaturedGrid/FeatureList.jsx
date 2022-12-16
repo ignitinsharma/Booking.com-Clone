@@ -13,8 +13,8 @@ const FeatureList = () => {
               className="featuredImgOne"
             />
             <div className="featuredTitlesOne">
-              <h1>Mumbai</h1>
-              <h2>532 properties</h2>
+              <h1 className="MumbaiH1">Mumbai</h1>
+              <h2 className="MumbaiH2">532 properties</h2>
             </div>
           </div>
         </div>
@@ -54,8 +54,8 @@ const FeatureList = () => {
             className="featuredImgGrid"
           />
           <div className="featuredTitlesGrid">
-            <h1>London, UK</h1>
-            <h3>123 properties</h3>
+            <h1 className="SecondTitleH1">London, UK</h1>
+            <h3 className="SecondTitleH3">123 properties</h3>
           </div>
         </div>
 
@@ -66,8 +66,8 @@ const FeatureList = () => {
             className="featuredImgGrid"
           />
           <div className="featuredTitlesGrid">
-            <h1>Vienna, Austria</h1>
-            <h3>456 properties</h3>
+            <h1 className="SecondTitleH1">Vienna, Austria</h1>
+            <h3 className="SecondTitleH3">456 properties</h3>
           </div>
         </div>
         <div className="featuredItemGrid">
@@ -77,8 +77,8 @@ const FeatureList = () => {
             className="featuredImgGrid"
           />
           <div className="featuredTitlesGrid">
-            <h1>Paris, France</h1>
-            <h3>435 properties</h3>
+            <h1 className="SecondTitleH1">Paris, France</h1>
+            <h3 className="SecondTitleH3">435 properties</h3>
           </div>
         </div>
       </div>
