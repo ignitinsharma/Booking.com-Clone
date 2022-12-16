@@ -55,10 +55,12 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faBed} />
               <span> Stays</span>
             </div>
-            <div className="headerlistItems">
-              <FontAwesomeIcon icon={faPlane} />
-              <span> Flights</span>
-            </div>
+            <Link to='flights'>
+              <div className="headerlistItems">
+                <FontAwesomeIcon icon={faPlane} />
+                <span> Flights</span>
+              </div>
+            </Link>
             <div className="headerlistItems">
               <FontAwesomeIcon icon={faCar} />
               <span> Car Rental</span>
