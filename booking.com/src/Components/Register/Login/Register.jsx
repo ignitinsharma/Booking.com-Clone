@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 let DataArray = [];
 
@@ -23,7 +24,9 @@ const Register = () => {
           padding: "10px 15%",
         }}
       >
-        <h2 style={{ fontSize: "1.2rem" }}>&lt;/MyBooking.com&gt;</h2>
+        <Link to="/">
+          <h2 style={{ fontSize: "1.2rem" }}>&lt;/MyBooking.com&gt;</h2>
+        </Link>
         <div style={{ display: "flex", gap: "20px" }}>
           <img
             style={{ borderRadius: "50%" }}
