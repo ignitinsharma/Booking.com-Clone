@@ -21,8 +21,9 @@
   color: white;
   padding: 1rem 0 1rem 0;
   z-index: 1;
-  font-size: 40px;
+  font-size: 3rem;
   width: 50%;
+  font-weight: 700;
 }
 
 .ImgsectionPTag {
