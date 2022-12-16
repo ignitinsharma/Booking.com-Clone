@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
-import {Button} from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
@@ -167,7 +167,12 @@ const Header = () => {
               ) : null}
             </div>
             <div className="headerSearchItems">
-              <Button colorScheme="teal" size="xs">
+              <Button
+                style={{ backgroundColor: "#0071C2", color: "white" }}
+                colorScheme="teal"
+                variant="contained"
+                size="md"
+              >
                 Search
               </Button>
             </div>

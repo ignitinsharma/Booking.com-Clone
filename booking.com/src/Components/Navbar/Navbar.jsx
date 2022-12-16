@@ -8,24 +8,48 @@ import {
   faPlane,
   faTaxi,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
       <div className="navbar">
         <div className="navContainer">
-          <span className="logo">&lt;/MyBooking.com&gt;</span>
+          <Link to="/">
+            <span className="logo">&lt;/MyBooking.com&gt;</span>
+          </Link>
           <div className="navItems">
-            {/* <Button variant="outlined" style={{ color: "white" }}>
+            <Button
+              style={{ color: "white" }}
+              _hover={{ backgroundColor: "#003590" }}
+              variant="outline"
+            >
               List your Property
-            </Button> */}
-            <button className="navButton">Register</button>
-            <button className="navButton">Login</button>
+            </Button>
+            <Link to="/register">
+              <Button
+                style={{ color: "#0071C2" }}
+                className="navButton"
+                variant="solid"
+              >
+                Register
+              </Button>
+            </Link>
+
+            <Link to="/login">
+              <Button
+                className="navButton"
+                style={{ color: "#0071C2" }}
+                variant="solid"
+              >
+                Login
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
 
-                {/* Navlinks*/}
+      {/* Navlinks*/}
       <div className="header">
         <div className="headerContainer">
           <div className="headerList">
@@ -33,10 +57,12 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faBed} />
               <span> Stays</span>
             </div>
-            <div className="headerlistItems">
-              <FontAwesomeIcon icon={faPlane} />
-              <span> Flights</span>
-            </div>
+            <Link to="flights">
+              <div className="headerlistItems">
+                <FontAwesomeIcon icon={faPlane} />
+                <span> Flights</span>
+              </div>
+            </Link>
             <div className="headerlistItems">
               <FontAwesomeIcon icon={faCar} />
               <span> Car Rental</span>

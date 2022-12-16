@@ -1,0 +1,171 @@
+.SearcHbarDiv {
+  height: auto;
+  width: 90%;
+  background: whitesmoke;
+  margin: auto;
+}
+.TrendingCitiesDiv {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  background: white;
+  padding-bottom: 3rem;
+}
+
+.topFlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.DataDiv {
+  width: 30%;
+  height: auto;
+  gap: 1rem;
+}
+
+.topFlightsImg {
+  border-radius: 9px;
+  width: auto;
+  height: 260px;
+}
+
+.DataDivHeading {
+  margin-top: 1rem;
+}
+
+/* Huge Section */
+
+.HugSectionParent {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+  padding: 2rem 0 5rem 0;
+}
+
+.HugeSection {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+}
+.b1 {
+  height: 100%;
+  width: 27%;
+  display: flex;
+}
+.b2 {
+  height: 100%;
+  width: 30%;
+  display: flex;
+}
+.b3 {
+  height: 100%;
+  width: 30%;
+  display: flex;
+}
+
+.sicon {
+  border: 1px solid yellow;
+  margin: auto;
+  margin-top: 90px;
+  margin-left: 25px;
+}
+
+.sbox4 {
+  width: 100%;
+  padding-left: 10%;
+  height: 1000px;
+  background: white;
+  margin-top: 70px;
+}
+
+/* 
+
+.corona {
+  width: 90%;
+  background-color: #fff0e0;
+  border: 1px solid #ff8000;
+  padding: 20px;
+  color: #262626;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+h1 {
+  font-size: 25px;
+}
+p {
+  margin: 0px;
+  margin-top: -20px;
+}
+.dom {
+  height: 40px;
+  width: 110px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: white;
+  border-width: thin;
+  border-bottom-color: white;
+}
+.dom:hover {
+  background-color: rgb(218, 213, 213);
+  cursor: pointer;
+}
+.dom:focus {
+  border-bottom-color: blue;
+  border-width: normal;
+  color: blue;
+} */
+
+/* 
+.dom1 {
+  height: 45px;
+  width: 110px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: white;
+  border-bottom-color: rgb(238, 236, 236);
+  border-width: thin;
+}
+.dom1:hover {
+  background-color: rgb(218, 213, 213);
+  cursor: pointer;
+}
+.dom1:focus {
+  border-bottom-color: blue;
+  color: blue;
+}
+
+.flyWorldwide {
+  border: 1px solid rgb(185, 183, 183);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 90%;
+  height: auto;
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+.test {
+  width: 340px;
+  height: 80px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.faq {
+  width: 90%;
+  height: auto;
+  display: grid;
+  row-gap: 15px;
+  column-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin-top: 20px;
+} */
