@@ -1,8 +1,10 @@
+// import CarouselMain from "../Carousel/CarouselMain";
 import FeatureList from "../FeaturedGrid/FeatureList";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
 import "./Home.css";
+import { HomeGuestLove } from "./HomeGuestLove";
 
 const Home = () => {
   return (
@@ -14,6 +16,9 @@ const Home = () => {
       <div className="FeatureListContainer">
         <FeatureList />
       </div>
+      {/* <CarouselMain/> */}
+      <br />
+      <HomeGuestLove/>
       <Footer/>
     </div>
   );
