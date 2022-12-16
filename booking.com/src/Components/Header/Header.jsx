@@ -168,7 +168,7 @@ const Header = () => {
             </div>
             <div className="headerSearchItems">
               <Button
-                style={{ backgroundColor: "#003580", color: "white" }}
+                style={{ backgroundColor: "#0071C2", color: "white" }}
                 colorScheme="teal"
                 variant="contained"
                 size="md"
