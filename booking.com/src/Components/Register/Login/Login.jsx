@@ -1,42 +1,14 @@
-// import { Box, Button, Input } from '@chakra-ui/react'
-// import React from 'react'
-// import { useState } from 'react'
-
-// const Register = () => {
-//   let auth = JSON.parse(localStorage.getItem('auth')) || []
-//   const [email , setemail] = useState('')
-//   const [password , setpassword] = useState('')
-//   const handlelogin = () => {
-
-//     auth.push({email, password})
-//     localStorage.setItem('auth', JSON.stringify(auth))
-
-//   }
-//   return (
-//     <Box>
-//       <Input value={email} onChange={(e) => setemail(e.target.value)} />
-//       <p>jfycdut</p>
-//       <Input value={password} onChange={(e) => setpassword(e.target.value)} />
-//       <Button onClick={handlelogin}>Login</Button>
-//     </Box>
-//   )
-// }
-
-// export default Register
-
 import React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+let DataArray = JSON.parse(localStorage.getItem("userdata"));
 
 const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const navigate = useNavigate();
 
-  const handleLogin = () => {
-    //  saveLocalData("email",email)
-    navigate("/createPassword");
-  };
+  const handleLogin = () => {};
 
   return (
     <div style={{ fontFamily: "roboto", color: "#333" }}>
@@ -49,7 +21,9 @@ const Login = () => {
           padding: "10px 15%",
         }}
       >
-        <h2 style={{ fontSize: "1.2rem" }}>&lt;/MyBooking.com&gt;</h2>
+        <Link to="/">
+          <h2 style={{ fontSize: "1.2rem" }}>&lt;/MyBooking.com&gt;</h2>
+        </Link>
         <div style={{ display: "flex", gap: "20px" }}>
           <img
             style={{ borderRadius: "50%" }}
