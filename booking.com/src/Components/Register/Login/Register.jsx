@@ -26,16 +26,19 @@
 
 import React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom"
+
+let DataArray = [];
 
 const Register = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const navigate = useNavigate();
+  // const [data, setdata] = useState([]);
+  //const navigate = useNavigate();
 
-  const handleLogin = () => {
-    //  saveLocalData("email",email)
-    navigate("/createPassword");
+  const handleRegister = () => {
+    DataArray.push({ email, password });
+    localStorage.setItem("userdata", JSON.stringify(DataArray));
   };
 
   return (
@@ -87,7 +90,7 @@ const Register = () => {
           <br></br>
           <input
             value={password}
-            onChange={(e) => password(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
             style={{
               marginTop: "6px",
               height: "36px",
@@ -99,7 +102,7 @@ const Register = () => {
           />
         </div>
         <button
-          onClick={handleLogin}
+          onClick={handleRegister}
           style={{
             cursor: "pointer",
             marginTop: "15px",
@@ -111,9 +114,7 @@ const Register = () => {
             color: "white",
             fontWeight: "bold",
             fontSize: "16px",
-    
           }}
-
         >
           Register
         </button>
