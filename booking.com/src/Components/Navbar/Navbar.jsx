@@ -9,7 +9,7 @@ import {
   faTaxi,
 } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@chakra-ui/react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
@@ -17,15 +17,32 @@ const Navbar = () => {
         <div className="navContainer">
           <span className="logo">&lt;/MyBooking.com&gt;</span>
           <div className="navItems">
-            <Button style={{ color: "white" }}  _hover={{backgroundColor:"#003590"}} variant="outline">
+            <Button
+              style={{ color: "white" }}
+              _hover={{ backgroundColor: "#003590" }}
+              variant="outline"
+            >
               List your Property
             </Button>
-            <Button className="navButton" variant="solid">
-            Register
-            </Button>
-            <Button className="navButton" style={{ color: "black" }} variant="solid">
-            Login
-            </Button>
+            <Link to="/register">
+              <Button
+                style={{ color: "#0071C2" }}
+                className="navButton"
+                variant="solid"
+              >
+                Register
+              </Button>
+            </Link>
+
+            <Link to="/login">
+              <Button
+                className="navButton"
+                style={{ color: "#0071C2" }}
+                variant="solid"
+              >
+                Login
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
