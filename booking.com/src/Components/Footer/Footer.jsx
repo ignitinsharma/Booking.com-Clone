@@ -24,8 +24,19 @@ const Footer = () => {
         </Box>
         <Box m="auto" w="40%" pt="1rem">
           <Flex gap="0.5rem">
-            <Input h="3rem" bg="white" placeholder="Your email" borderRadius={0} />
-            <Button h="3rem" bg="#0071c2" p="2px 40px" borderRadius="0" color="white">
+            <Input
+              h="3rem"
+              bg="white"
+              placeholder="Your email"
+              borderRadius={0}
+            />
+            <Button
+              h="3rem"
+              bg="#0071c2"
+              p="2px 40px"
+              borderRadius="0"
+              color="white"
+            >
               Subscribe
             </Button>
           </Flex>
@@ -40,14 +51,23 @@ const Footer = () => {
           </Box>
         </Box>
       </Box>
+            {/* List Your Property section */}
       <Box w="100%" bg="#003580" pb="15px">
-        <Box w="80%" m="auto" color="white" pt="15px" pb="15px">
-          <Box w="10rem" border="1px solid white" m="auto" textAlign={"center"} p="4px 10px">
+    <Box  w="80%" m="auto" color="white" pt="2rem" pb="2rem">
+          <Box
+            w="10rem"
+            border="1px solid white"
+            m="auto"
+            textAlign={"center"}
+            p="4px 10px"
+          >
             {" "}
-            <Text>List your propety</Text>
+            <Text pt='0.5rem' pb='0.5rem'>List your propety</Text>
           </Box>
         </Box>
+
         <hr />
+
         <Box w="80%" m="auto" pt="10px">
           <Flex color="white" justifyContent="space-between">
             <Box>
@@ -76,7 +96,12 @@ const Footer = () => {
 
       <Box w="100%">
         <Box w="80%" m="auto" pt="2rem">
-          <Flex color="#0071c2" justifyContent="space-between" fontSize={"13px"} lineHeight="25px">
+          <Flex
+            color="#0071c2"
+            justifyContent="space-between"
+            fontSize={"13px"}
+            lineHeight="25px"
+          >
             <Box>
               <Flex flexDirection="column">
                 <Text>Countries</Text>
@@ -143,26 +168,53 @@ const Footer = () => {
       <Box w="100%">
         <Box w="80%" m="auto">
           <Box color="#0071c2" pt="2rem" pb="1rem">
-            <Link to="/signIn">
-              <Text textAlign="center" fontSize="17px" fontWeight={"bold"}>
+            <Link to="/login">
+              <Text textAlign="center" fontSize="16px" fontWeight={"bold"}>
                 Extranet login
               </Text>
             </Link>
           </Box>
-          <Text mt="20px" fontSize={"12px"}>Copyright © 1996–2022 Booking.com™. All rights reserved.</Text>
+          <Text mt="20px" fontSize={"12px"}>
+            Copyright © 1996–2022 Booking.com™. All rights reserved.
+          </Text>
           <Box textAlign="center" pt="2rem" pb="1rem">
             <Text fontSize={"12px"}>
               Booking.com is part of Booking Holdings Inc., the world leader in
               online travel and related services.
             </Text>
           </Box>
-          <SimpleGrid columns={[2, null, 6]} spacing='40px' pt="1rem" pb="2rem" pr="20%" pl="20%">
-             <img src='https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png' alt="loding"/>
-              <img src='https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png'alt="loding" />
-              <img src='https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png' alt="loding"/>
-              <img src='https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png' alt="loding"/>
-              <img src='https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png'alt="loding" />
-              <img src='https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png' alt="loding" />
+          <SimpleGrid
+            columns={[2, null, 6]}
+            spacing="40px"
+            pt="1rem"
+            pb="2rem"
+            pr="20%"
+            pl="20%"
+          >
+            <img
+              src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png"
+              alt="loding"
+            />
+            <img
+              src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png"
+              alt="loding"
+            />
+            <img
+              src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png"
+              alt="loding"
+            />
+            <img
+              src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png"
+              alt="loding"
+            />
+            <img
+              src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png"
+              alt="loding"
+            />
+            <img
+              src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png"
+              alt="loding"
+            />
           </SimpleGrid>
         </Box>
       </Box>
