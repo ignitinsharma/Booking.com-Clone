@@ -12,23 +12,21 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Asia } from "../DataComponents/Asia";
 import { Europe } from "../DataComponents/Europe";
+import { Oceania } from "../DataComponents/Oceania";
+import { Africa } from "../DataComponents/Africa";
 import { NorthAmerica } from "../DataComponents/NorthAmerica";
 import { TrendingCities } from "../DataComponents/TrendingCities";
 import { FAQ } from "../DataComponents/FAQ";
 import SmallFooter from "../Footer/SmallFooter";
-import { Link } from "react-router-dom";
 
 const Flight = () => {
   const [data, setData] = useState(Europe);
-  const handleEurope = () => {
-    setData(Europe);
+  const handleAfrica = () => {
+    setData(Africa);
   };
-  //   const handleAfrica = () => {
-  //     setData(Africa);
-  //   };
-  //   const handleOceania = () => {
-  //     setData(Oceania);
-  //   };
+  const handleOceania = () => {
+    setData(Oceania);
+  };
   const handleNorthAmerica = () => {
     setData(NorthAmerica);
   };
@@ -39,19 +37,21 @@ const Flight = () => {
     <div>
       <Navbar />
 
-      <div className="SearcHbarDiv">
-        <div>
-          <Heading
-            style={{ fontSize: "30px", marginTop: "25px", color: "#444" }}
-          >
-            {" "}
-            Compare and book flights with ease
-          </Heading>
-          <p style={{ marginTop: "18px" }}>
-            Discover your next dream destination
-          </p>
+      <div className="SearchDivForColor">
+        <div className="SearcHbarDiv">
+          <div>
+            <Heading
+              style={{ fontSize: "30px", marginTop: "25px", color: "#444" }}
+            >
+              {" "}
+              Compare and book flights with ease
+            </Heading>
+            <p style={{ marginTop: "18px" }}>
+              Discover your next dream destination
+            </p>
+          </div>
+          <SearchBar />
         </div>
-        <SearchBar />
       </div>
 
       {/* Trending Cities Section */}
@@ -67,8 +67,6 @@ const Flight = () => {
         <div className="topFlights" style={{ marginTop: "20px" }}>
           {TrendingCities.map((el) => (
             <div className="DataDiv">
-              {/* <Link to="/">
-              </Link> */}
               <img className="topFlightsImg" src={el.image} />
               <div className="des">
                 <div className="place">
@@ -105,7 +103,7 @@ const Flight = () => {
         <div className="HugeSection">
           <div className="b1">
             <div style={{ width: "20%", height: "100%" }}>
-              <FontAwesomeIcon icon={faAlignJustify} className="sicon" />
+              <FontAwesomeIcon icon={faAlignJustify} className="IconSection" />
             </div>
 
             <div
@@ -123,7 +121,10 @@ const Flight = () => {
           </div>
           <div className="b2">
             <div style={{ width: "20%", height: "100%" }}>
-              <FontAwesomeIcon icon={faMagnifyingGlass} className="sicon" />
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="IconSection"
+              />
             </div>
             <div
               style={{
@@ -140,7 +141,7 @@ const Flight = () => {
           </div>
           <div className="b3">
             <div style={{ width: "20%", height: "100%" }}>
-              <FontAwesomeIcon icon={faPlaneUp} className="sicon" />
+              <FontAwesomeIcon icon={faPlaneUp} className="IconSection" />
             </div>
             <div
               style={{
@@ -157,8 +158,8 @@ const Flight = () => {
           </div>
         </div>
       </div>
-      {/*  */}
-      <div className="sbox4">
+      {/* Fly worldwide Section  */}
+      <div className="FlyworldwideSection">
         <div>
           <Heading>Fly worldwide with Booking.com</Heading>
 
@@ -166,44 +167,63 @@ const Flight = () => {
             Flights from wherever you are to wherever you want to go
           </p>
         </div>
-        <div style={{ marginTop: "30px" }}>
-          <button onClick={handleEurope} className="dom1">
+        <div className="FlyworldDataChangeOnclick">
+          <button onClick={()=>setData(Europe)} className="DataChangeBtns">
             Europe
           </button>
-          {/* <button onClick={handleAfrica} className="dom1">
+          <button onClick={()=>setData(Africa)} className="DataChangeBtns">
             Africa
-          </button> */}
-          {/* <button onClick={} className="dom1">
+          </button>
+          <button onClick={()=>setData(Oceania)} className="DataChangeBtns">
             Oceania
-          </button> */}
-          <button onClick={handleNorthAmerica} className="dom1">
+          </button>
+          <button onClick={()=>setData(NorthAmerica)} className="DataChangeBtns">
             North America
           </button>
-          <button onClick={handleAsia} className="dom1">
+          <button onClick={()=>setData(Asia)} className="DataChangeBtns">
             Asia
           </button>
         </div>
         <div className="flyWorldwide">
-          {/* {data.map((ele) => (
-            <Worldwide
-              key={ele.id}
-              image={ele.image}
-              destination={ele.destination}
-              flighttime={ele.flighttime}
-            />
-          ))} */}
+          {data.map((el) => (
+            <div className="flyWorldMapDataDiv">
+              <img
+                style={{ borderRadius: "3px" }}
+                width="25%"
+                height="100%"
+                src={el.image}
+                alt="worldWide"
+              />
+
+              <div
+                style={{
+                  width: "70%",
+                  marginLeft: "5%",
+                  height: "100%",
+                }}
+              >
+                <div style={{ marginTop: "10px" }}>
+                  <b>{el.destination}</b>
+                </div>
+                <div style={{ marginTop: "18px" }}>
+                  <p style={{ color: "grey" }}> {el.flighttime} </p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
         <div style={{ marginTop: "50px" }}>
           <Heading>Frequently asked questions</Heading>
         </div>
-        <div className="faq">
-          {/* {FAQ.map((ele) => (
-            <Faqs
-              key={ele.id}
-              heading={ele.heading}
-              description={ele.description}
-            />
-          ))} */}
+
+        {/* Faq Section */}
+        <div className="faqSection">
+          {FAQ.map((ele) => (
+            <div className="faqSecDiv">
+              <h3 style={{ fontWeight: "700" }}>{ele.heading}</h3>
+              <p>{ele.description}</p>
+            </div>
+          ))}
         </div>
       </div>
       <SmallFooter />

@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import React from "react";
 import "./FlightSearchBar.css";
+import { Link } from "react-router-dom";
+import { Button } from "@chakra-ui/react";
 const FlightSearchBar = () => {
   const [first, setFirst] = useState();
   const [second, setSecond] = useState();
@@ -21,7 +23,7 @@ const FlightSearchBar = () => {
           <input name="type" type="radio" value="3" />
           <label style={{ marginLeft: "8px" }}>Multi-city</label>
         </div>
-        <select style={{ marginTop: "-6px"}}>
+        <select style={{ marginTop: "-6px" }}>
           <option value="">Economy</option>
           <option value=""> Premium Economy</option>
           <option value="">Business</option>
@@ -66,9 +68,20 @@ const FlightSearchBar = () => {
         <div className="date2">
           <input type="date" className="dep" />
         </div>
-        <div className="searchButton">
-          <button onClick={() => alert("Wait a Second 😁")}>Search</button>
-        </div>
+        <Link to={'/flightoptions'}>
+          <div className="searchButton">
+          <Button
+                style={{ backgroundColor: "#0071C2", color: "white" }}
+                colorScheme="teal"
+                variant="contained"
+                size="lg"
+                onClick={() => alert("Wait a Second 😁")}
+              >
+                Search
+              </Button>
+          </div>
+        </Link>
+        {/* </Link> */}
       </div>
 
       <div style={{ marginTop: "15px" }}>

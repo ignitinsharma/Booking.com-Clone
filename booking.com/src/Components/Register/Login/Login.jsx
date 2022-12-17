@@ -3,15 +3,24 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 let DataArray = JSON.parse(localStorage.getItem("userdata"));
+console.log(DataArray);
 
 const Login = () => {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleLogin = () => {};
+  const handleLogin = () => {
+    for (let i = 0; i < DataArray.length; i++) {
+      if (DataArray[i].email == email && DataArray[i].password == password) {
+        alert(`Login Successful`);
+        setEmail("");
+        setPassword("");
+      }
+    }
+  };
 
   return (
-    <div style={{ fontFamily: "roboto", color: "#333" }}>
+    <div style={{ fontFamily: "", color: "#333" }}>
       <div
         style={{
           display: "flex",
