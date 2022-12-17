@@ -7,6 +7,7 @@ import NotFound from "../NotFound/NotFound";
 import Login from "../Register/Login/Login";
 import Register from "../Register/Login/Register";
 import Flights from "../Flights/Flights";
+import FlightOptions from "../Flights/FlightOptions/FlightOptions";
 
 const AllRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AllRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="/hotels" element={<Hotels />} />
       <Route path="/flights" element={<Flights />} />
+      <Route path="/flightoptions" element={<FlightOptions />} />
       <Route path="/hotels/:id" element={<SingleHotelPage />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
