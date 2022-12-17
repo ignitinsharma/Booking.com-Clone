@@ -5,16 +5,19 @@ import { Link } from "react-router-dom";
 let DataArray = [];
 
 const Register = () => {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleRegister = () => {
     DataArray.push({ email, password });
     localStorage.setItem("userdata", JSON.stringify(DataArray));
+    alert('Registration Successful')
+    setEmail("")
+    setPassword("")
   };
 
   return (
-    <div style={{ fontFamily: "roboto", color: "#333" }}>
+    <div style={{ fontFamily: "", color: "#333" }}>
       <div
         style={{
           display: "flex",
@@ -172,7 +175,7 @@ const Register = () => {
           <p
             style={{ color: "#104982", fontWeight: "bold", marginTop: "24px" }}
           >
-            More ways to sign in
+            More ways to Register
           </p>
         </center>
         <div
