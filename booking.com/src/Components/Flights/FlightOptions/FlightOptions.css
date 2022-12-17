@@ -1,0 +1,42 @@
+.FlightListdata{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0rem;
+    
+}
+
+.Subdivdata{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(218, 213, 213);
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.timedataofFlight{
+    border-right: 1px solid rgb(218, 213, 213);
+    width: 65%;
+    height: auto;
+    padding: 1rem 0.2rem; 
+
+}
+
+.firstTimediv{
+    padding:0.2rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.divImgPTag{
+    margin-top: 1rem;
+}
+
+
+.seeFlight{
+    width: 40%;
+    height: 10rem;
+    text-align: right;
+    padding: 1rem;
+}
