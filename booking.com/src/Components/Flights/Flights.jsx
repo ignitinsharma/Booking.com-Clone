@@ -12,6 +12,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Asia } from "../DataComponents/Asia";
 import { Europe } from "../DataComponents/Europe";
+import { Oceania } from "../DataComponents/Oceania";
+import { Africa } from "../DataComponents/Africa";
 import { NorthAmerica } from "../DataComponents/NorthAmerica";
 import { TrendingCities } from "../DataComponents/TrendingCities";
 import { FAQ } from "../DataComponents/FAQ";
@@ -23,12 +25,12 @@ const Flight = () => {
   const handleEurope = () => {
     setData(Europe);
   };
-  //   const handleAfrica = () => {
-  //     setData(Africa);
-  //   };
-  //   const handleOceania = () => {
-  //     setData(Oceania);
-  //   };
+  const handleAfrica = () => {
+    setData(Africa);
+  };
+  const handleOceania = () => {
+    setData(Oceania);
+  };
   const handleNorthAmerica = () => {
     setData(NorthAmerica);
   };
@@ -67,8 +69,6 @@ const Flight = () => {
         <div className="topFlights" style={{ marginTop: "20px" }}>
           {TrendingCities.map((el) => (
             <div className="DataDiv">
-              {/* <Link to="/">
-              </Link> */}
               <img className="topFlightsImg" src={el.image} />
               <div className="des">
                 <div className="place">
@@ -158,7 +158,7 @@ const Flight = () => {
         </div>
       </div>
       {/*  */}
-      <div className="sbox4">
+      <div className="FlyworldwideSection">
         <div>
           <Heading>Fly worldwide with Booking.com</Heading>
 
@@ -166,16 +166,16 @@ const Flight = () => {
             Flights from wherever you are to wherever you want to go
           </p>
         </div>
-        <div style={{ marginTop: "30px" }}>
+        <div className="FlyworldDataChangeOnclick">
           <button onClick={handleEurope} className="dom1">
             Europe
           </button>
-          {/* <button onClick={handleAfrica} className="dom1">
+          <button onClick={handleAfrica} className="dom1">
             Africa
-          </button> */}
-          {/* <button onClick={} className="dom1">
+          </button>
+          <button onClick={handleOceania} className="dom1">
             Oceania
-          </button> */}
+          </button>
           <button onClick={handleNorthAmerica} className="dom1">
             North America
           </button>
@@ -184,26 +184,44 @@ const Flight = () => {
           </button>
         </div>
         <div className="flyWorldwide">
-          {/* {data.map((ele) => (
-            <Worldwide
-              key={ele.id}
-              image={ele.image}
-              destination={ele.destination}
-              flighttime={ele.flighttime}
-            />
-          ))} */}
+          {data.map((el) => (
+            <div className="flyWorldMapDataDiv">
+              <img
+                style={{ borderRadius: "3px" }}
+                width="25%"
+                height="100%"
+                src={el.image}
+                alt="worldWide"
+              />
+
+              <div
+                style={{
+                  width: "70%",
+                  marginLeft: "5%",
+                  height: "100%",
+                }}
+              >
+                <div style={{ marginTop: "10px" }}>
+                  <b>{el.destination}</b>
+                </div>
+                <div style={{ marginTop: "18px" }}>
+                  <p style={{ color: "grey" }}> {el.flighttime} </p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
         <div style={{ marginTop: "50px" }}>
           <Heading>Frequently asked questions</Heading>
         </div>
-        <div className="faq">
-          {/* {FAQ.map((ele) => (
-            <Faqs
-              key={ele.id}
-              heading={ele.heading}
-              description={ele.description}
-            />
-          ))} */}
+        {/* Faq Section */}
+        <div className="faqSection">
+          {FAQ.map((ele) => (
+            <div className="faqSecDiv">
+              <h3 style={{ fontWeight: "700" }}>{ele.heading}</h3>
+              <p>{ele.description}</p>
+            </div>
+          ))}
         </div>
       </div>
       <SmallFooter />

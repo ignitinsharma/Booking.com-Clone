@@ -1,6 +1,6 @@
 .SearcHbarDiv {
-  height: auto;
   width: 90%;
+  height: auto;
   background: whitesmoke;
   margin: auto;
 }
@@ -74,12 +74,72 @@
   margin-left: 25px;
 }
 
-.sbox4 {
-  width: 100%;
-  padding-left: 10%;
-  height: 1000px;
+.FlyworldwideSection {
+  width: 90%;
+  height: auto;
   background: white;
   margin-top: 70px;
+  margin: auto;
+  border: 1px solid royalblue;
+}
+
+.FlyworldDataChangeOnclick {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.FlyworldDataChangeOnclick button {
+  margin-top: 1rem;
+}
+
+.flyWorldwide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.faqSection {
+  width: 90%;
+  height: auto;
+  display: grid;
+  row-gap: 15px;
+  column-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin-top: 20px;
+  border: 2px solid green;
+}
+
+.flyWorldMapDataDiv {
+  width: 340px;
+  height: auto;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.faqSecDiv {
+  width: 100%;
+  height: 180px;
+  border: 1px solid rgb(202, 200, 200);
+  margin: auto;
+  padding: 1rem 0 1rem 0.5rem;
+  border-radius: 5px;
+}
+
+.dom1 {
+  height: auto;
+  width: auto;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: white;
+  border-bottom-color: rgb(238, 236, 236);
+  border-width: thin;
+}
+.dom1:focus {
+  border-bottom-color: blue;
+  color: blue;
 }
 
 /* 
@@ -121,24 +181,7 @@ p {
 } */
 
 /* 
-.dom1 {
-  height: 45px;
-  width: 110px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  background-color: white;
-  border-bottom-color: rgb(238, 236, 236);
-  border-width: thin;
-}
-.dom1:hover {
-  background-color: rgb(218, 213, 213);
-  cursor: pointer;
-}
-.dom1:focus {
-  border-bottom-color: blue;
-  color: blue;
-}
+
 
 .flyWorldwide {
   border: 1px solid rgb(185, 183, 183);
@@ -159,13 +202,4 @@ p {
   display: flex;
 }
 
-.faq {
-  width: 90%;
-  height: auto;
-  display: grid;
-  row-gap: 15px;
-  column-gap: 15px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  margin-top: 20px;
-} */
+ */
