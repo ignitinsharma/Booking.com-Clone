@@ -36,4 +36,4 @@ const FAQ = [
       "No, we don't charge any credit card fees. You can always see exactly what you’re paying for in the price breakdown when reviewing your booking.",
   },
 ];
-export default FAQ;
+export {FAQ};
