@@ -1,4 +1,4 @@
-const TravelCcommunity = [
+const TravelCommunity = [
   {
     id: 1,
     image:
@@ -35,4 +35,4 @@ const TravelCcommunity = [
     travellers: "98,94,940",
   },
 ];
-export { TravelCcommunity };
+export { TravelCommunity };

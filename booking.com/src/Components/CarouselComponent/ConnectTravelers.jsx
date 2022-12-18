@@ -2,9 +2,10 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./ExploreIndia.css";
-import { HotelData } from "../DataComponents/HotelData";
+import { TravelCommunity } from "../DataComponents/TravelCommunity";
 
-const ExploreIndia = () => {
+const ConnectTravelers = () => {
+  console.log(TravelCommunity);
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -25,12 +26,12 @@ const ExploreIndia = () => {
   return (
     <div className="ExploreMain">
       <Carousel responsive={responsive} transitionDuration={1000}>
-        {HotelData.map((el) => {
+        {TravelCommunity.map((el) => {
           return (
             <div className="ExploreDiv">
-              <img className="ExploreDivImg" src={el.url} alt="" />
-              <h1 className="Exploreh1">{el.city}</h1>
-              <p style={{ color: "#6b6b6b" }}>{el.reviews} reviews</p>
+              <img className="ExploreDivImg" src={el.image} alt="" />
+              <h1 className="Exploreh1">{el.country}</h1>
+              <p style={{ color: "#6b6b6b" }}>{el.travellers} travellers</p>
             </div>
           );
         })}
@@ -39,4 +40,4 @@ const ExploreIndia = () => {
   );
 };
 
-export default ExploreIndia;
+export default ConnectTravelers;

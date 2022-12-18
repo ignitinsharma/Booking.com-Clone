@@ -1,3 +1,4 @@
+import ConnectTravelers from "../CarouselComponent/ConnectTravelers";
 import ExploreIndia from "../CarouselComponent/ExploreIndia";
 import FeatureList from "../FeaturedGrid/FeatureList";
 import Footer from "../Footer/Footer";
@@ -15,6 +16,11 @@ const Home = () => {
       <br />
       <div className="FeatureListContainer">
         <FeatureList />
+      </div>
+      <br />
+      <div className="CarouselContainer">
+        <h1 className="ExploreIndiaH1">Connect with other travellers</h1>
+        <ConnectTravelers/>
       </div>
       {/* <CarouselMain/> */}
       <br />
