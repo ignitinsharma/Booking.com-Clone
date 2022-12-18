@@ -8,7 +8,6 @@ import {
   Interest,
 } from "../DataComponents/Region_CIty_Interest";
 
-// const Pages = ["Region", "Cities", "Place of Interest"];
 const DestinationWeLove = () => {
   const [pagesData, setPagesData] = useState(Region);
 
