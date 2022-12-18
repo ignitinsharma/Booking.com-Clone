@@ -1,0 +1,21 @@
+.ExploreMain{
+    display: grid;
+}
+
+.ExploreDiv {
+  display: grid;
+  margin: auto;
+  justify-content: space-between;
+  /* column-gap: 0.5rem; */
+}
+
+.ExploreDivImg {
+  width: 250px;
+  height: 250px;
+}
+
+.Exploreh1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
+}

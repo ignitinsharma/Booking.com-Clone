@@ -1,4 +1,4 @@
-// import CarouselMain from "../Carousel/CarouselMain";
+import ExploreIndia from "../CarouselComponent/ExploreIndia";
 import FeatureList from "../FeaturedGrid/FeatureList";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -18,8 +18,12 @@ const Home = () => {
       </div>
       {/* <CarouselMain/> */}
       <br />
-      <HomeGuestLove/>
-      <Footer/>
+      <HomeGuestLove />
+      <div className="CarouselContainer">
+        <h1 className="ExploreIndiaH1">Explore Cities</h1>
+        <ExploreIndia/>
+      </div>
+      <Footer />
     </div>
   );
 };
