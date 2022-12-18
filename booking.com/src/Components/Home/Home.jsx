@@ -1,3 +1,4 @@
+import BrowseBy from "../CarouselComponent/BrowseBy";
 import ConnectTravelers from "../CarouselComponent/ConnectTravelers";
 import ExploreIndia from "../CarouselComponent/ExploreIndia";
 import FeatureList from "../FeaturedGrid/FeatureList";
@@ -27,7 +28,7 @@ const Home = () => {
       <HomeGuestLove />
       <div className="CarouselContainer">
         <h1 className="ExploreIndiaH1">Browse by property type</h1>
-        <ExploreIndia/>
+        <BrowseBy/>
       </div>
       <div className="CarouselContainer">
         <h1 className="ExploreIndiaH1">Explore Cities</h1>
