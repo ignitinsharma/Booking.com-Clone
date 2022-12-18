@@ -6,6 +6,7 @@
   display: grid;
   margin: auto;
   justify-content: space-between;
+  margin-bottom: 1rem;
   /* column-gap: 0.5rem; */
 }
 
