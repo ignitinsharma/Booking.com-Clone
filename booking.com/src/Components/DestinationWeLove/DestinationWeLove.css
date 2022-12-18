@@ -1,0 +1,41 @@
+.DestinationWeLoveDiv {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.DestinationWeLoveButtonsDiv {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.DestinationButtons {
+  border: 1.5px solid #0071c2;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  color: #0071c2;
+  font-weight: 600;
+}
+
+.DestinationMapDiv {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.2rem 2rem;
+}
+
+.DestinationMapData {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.DestinationMapDataH1 {
+  font-weight: 700;
+}
+
+.DestinationMapDataH2{
+    color:#6B6D87
+}

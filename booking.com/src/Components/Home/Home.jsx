@@ -1,6 +1,7 @@
 import BrowseBy from "../CarouselComponent/BrowseBy";
 import ConnectTravelers from "../CarouselComponent/ConnectTravelers";
 import ExploreIndia from "../CarouselComponent/ExploreIndia";
+import DestinationWeLove from "../DestinationWeLove/DestinationWeLove";
 import FeatureList from "../FeaturedGrid/FeatureList";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -21,19 +22,20 @@ const Home = () => {
       <br />
       <div className="CarouselContainer">
         <h1 className="ExploreIndiaH1">Connect with other travellers</h1>
-        <ConnectTravelers/>
+        <ConnectTravelers />
       </div>
       {/* <CarouselMain/> */}
       <br />
       <HomeGuestLove />
       <div className="CarouselContainer">
         <h1 className="ExploreIndiaH1">Browse by property type</h1>
-        <BrowseBy/>
+        <BrowseBy />
       </div>
       <div className="CarouselContainer">
         <h1 className="ExploreIndiaH1">Explore Cities</h1>
-        <ExploreIndia/>
+        <ExploreIndia />
       </div>
+      <DestinationWeLove />
       <Footer />
     </div>
   );
