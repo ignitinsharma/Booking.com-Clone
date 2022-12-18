@@ -21,18 +21,6 @@ import SmallFooter from "../Footer/SmallFooter";
 
 const Flight = () => {
   const [data, setData] = useState(Europe);
-  const handleAfrica = () => {
-    setData(Africa);
-  };
-  const handleOceania = () => {
-    setData(Oceania);
-  };
-  const handleNorthAmerica = () => {
-    setData(NorthAmerica);
-  };
-  const handleAsia = () => {
-    setData(Asia);
-  };
   return (
     <div>
       <Navbar />

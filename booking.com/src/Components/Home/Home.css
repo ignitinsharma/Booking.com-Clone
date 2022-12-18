@@ -10,3 +10,15 @@
 
 }
 
+.CarouselContainer{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.ExploreIndiaH1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}

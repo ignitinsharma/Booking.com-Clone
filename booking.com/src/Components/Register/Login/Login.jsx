@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 let DataArray = JSON.parse(localStorage.getItem("userdata"));
-console.log(DataArray);
+// console.log(DataArray);
 
 const Login = () => {
   const [email, setEmail] = useState("");

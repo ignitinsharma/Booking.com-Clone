@@ -195,7 +195,7 @@ const FlightOptions = () => {
                   <div className="seeFlight">
                     <FontAwesomeIcon icon={faCalendarDay} />
                     <p>Included: carry-on bag, checked bag</p>
-                    <b style={{ fontSize: "1.2rem" }}>INR23359.31</b>
+                    <b style={{ fontSize: "1.2rem" }}>INR{el.Price}</b>
                     <p>Total price for all travelers</p>
                     <Button
                       style={{
