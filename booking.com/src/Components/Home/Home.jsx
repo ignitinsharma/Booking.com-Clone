@@ -26,6 +26,10 @@ const Home = () => {
       <br />
       <HomeGuestLove />
       <div className="CarouselContainer">
+        <h1 className="ExploreIndiaH1">Browse by property type</h1>
+        <ExploreIndia/>
+      </div>
+      <div className="CarouselContainer">
         <h1 className="ExploreIndiaH1">Explore Cities</h1>
         <ExploreIndia/>
       </div>
