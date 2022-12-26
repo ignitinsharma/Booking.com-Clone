@@ -12,6 +12,10 @@ Booking.com is a one of the world’s leading digital travel companies, based on
 Run Project in your local system do these steps:
 
 ```
+$ git clone https://github.com/ignitinsharma/Booking.com-Clone.git
+
+$ cd booking.com
+
 $ npm install
 
 $ npm start
